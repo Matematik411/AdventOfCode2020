@@ -13,6 +13,8 @@ while i < 199:
             print(list[i]*list[j])
             stop = True
             break
+        elif list[i] + list[j] < 2020:
+            break
         j -=1
     i +=1
     j = 199
@@ -34,6 +36,8 @@ while i < 198:
             if list[i] + list[j] + list[k] == 2020:
                 print(list[i]*list[j]*list[k])
                 stop = True
+                break
+            elif list[i] + list[j] + list[k] < 2020:
                 break
             k -=1
         j +=1
